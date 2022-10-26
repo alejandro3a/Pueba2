@@ -15,3 +15,14 @@ cofigirar llaves ssh siempre en home
 git config -l -- visualizar las configuracciones del entorno y verificar el correo de github sea el mismo
 git config --global user.email "tebana100@gmail.com" -- configurar el repositorio
 git config --global user.name "aleandro.3a" -- configurar el nombre de los commits 
+
+-- crear llave
+Windows 
+ssh-keygen -t rsa -b 4096 -C "tebana100@gmail.com" ---generar llaves ssh
+eval $(ssh-agent -s) --es un comando para evaluar la conecion ssh
+ssh-add ~/.ssh/id_rsa --agrego la llave publica 
+
+-----Agregar la llave publica a el repositorio de github en ajuster ssh
+
+git remote -v -- verificar la url de nuestro repositorio 
+
