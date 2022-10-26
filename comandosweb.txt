@@ -36,6 +36,11 @@ git add . -- agregar todo ala rama local master
 git push prueba2 master -- mandamos al repositorio prueba 2 y a la rama master
 
 --Etiquetas
+ git log --all
+ git log --all --graph
+ git log --all --graph -decorate -oneline
 
+ Alias
+ variable ="" --
 
 
