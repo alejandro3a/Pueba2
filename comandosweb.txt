@@ -26,3 +26,16 @@ ssh-add ~/.ssh/id_rsa --agrego la llave publica
 
 git remote -v -- verificar la url de nuestro repositorio 
 
+
+---cambiamos la url con protocolo ssh 
+git remote set-url prueba2 {git@github.com:alejandro3a/Pueba2.git} --- el url esta en el repositorio
+git pull prueba2 master -- me trauigo todo el contenido del sevidor
+
+git commit -m "" -- agregar algun cambio
+git add . -- agregar todo ala rama local master
+git push prueba2 master -- mandamos al repositorio prueba 2 y a la rama master
+
+--Etiquetas
+
+
+
