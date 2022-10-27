@@ -1,49 +1,51 @@
-agregar un origen remoto
+*****Agregar un origen remoto
 git remote add origin (link) --
 git remote -v -- verifivamos que tenemos fetch(trer cosas) push(enviar cosas)
 ls -al -- ver todos los datos
 git push origin master -- enviar todo lo del repositorio a la web la rama master
------ intregrar los datos 
+*****Intregrar los datos 
 git pull origin master -- traer los datos de la web origen a la rama master
 git pull origin master --allow-unrelated-histories--forzar a unit los commit de la web con la rama local
-
 ls -al -- ver archivos como readme
 git push origin master -- enviar todos los datos al repositorio
- 
-cofigirar llaves ssh siempre en home
+*****Cofigirar llaves ssh siempre en home
 ----IMPORTANTE------
 git config -l -- visualizar las configuracciones del entorno y verificar el correo de github sea el mismo
 git config --global user.email "tebana100@gmail.com" -- configurar el repositorio
 git config --global user.name "aleandro.3a" -- configurar el nombre de los commits 
-
--- crear llave
-Windows 
+*****Crear llave
+-----Windows 
 ssh-keygen -t rsa -b 4096 -C "tebana100@gmail.com" ---generar llaves ssh
 eval $(ssh-agent -s) --es un comando para evaluar la conecion ssh
 ssh-add ~/.ssh/id_rsa --agrego la llave publica 
-
------Agregar la llave publica a el repositorio de github en ajuster ssh
-
+*****Agregar la llave publica a el repositorio de github en ajuster ssh
 git remote -v -- verificar la url de nuestro repositorio 
-
-
----cambiamos la url con protocolo ssh 
+*****Cambiamos la url con protocolo ssh 
 git remote set-url prueba2 {git@github.com:alejandro3a/Pueba2.git} --- el url esta en el repositorio
 git pull prueba2 master -- me trauigo todo el contenido del sevidor
-
 git commit -m "" -- agregar algun cambio
 git add . -- agregar todo ala rama local master
 git push prueba2 master -- mandamos al repositorio prueba 2 y a la rama master
-
---Etiquetas
+*****Etiquetas
  git log --all --- todo historicamente
  git log --all --graph -- indica todo con rayas donde se ingresaron los breach
  git log --all --graph -decorate -oneline -- toda la historia de forma mas ordenada y compacta
-
-
-
- Alias
+*****Alias
  alias variable ="comando dentro de las comillas" --crear variables de llamdado de comandos rapidos
-
+*****Agregar Tags
+git log --all --graph --decorate --oneline -- se copia el numeor amarillo y lo copias abajo
+git tag -a V0.1 -m "Resultado del avanze del curso 26/10/2022" dd63613  --
+git tag -- indica todos los tag en columna
+git show-ref --tags -- revisar el tag y con que commit esta enlasado
+git pull prueba2 master --
+git push prueba2 --tags
+**************Eliminar tags 
+git tag -a errorIntencional -m "errorintecionl para probar la eminacion"  404795b 
+git pull prueba2 master -- buena practica
+git push prueba2 --tags -- enviar tags a internet
+--- por comando 
+git tag -d errorIntencional
+---Borrado especial en servidor github
+git push prueba2 :refs/tags/errorIntencional
 
 
