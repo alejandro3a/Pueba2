@@ -47,5 +47,22 @@ git push prueba2 --tags -- enviar tags a internet
 git tag -d errorIntencional
 ---Borrado especial en servidor github
 git push prueba2 :refs/tags/errorIntencional
+*****Manejo de ramas
+git branch -- me indica todas las rmas
+git checkout 
+git show-branch
+git show-branch --all -- muestra las ramas con datos importantes en remoto
+gitk -- indica toda la histtoria de forma visual
+
+git branch header --crear ramas adicionales
+git branch footer -- Crear ramas adicionales
+git checkout master --cambiar de rama
+git branch --indicar ramas creadas localmente
+git push prueba2 footer -- enviar ramas a internet
+git push prueba2 header -- enviar ramas a internet
+****Traer los dato
+git clone [url] -- tiene que estar publico para descargarse 
+
+
 
 
