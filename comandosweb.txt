@@ -63,6 +63,8 @@ git push prueba2 header -- enviar ramas a internet
 ****Traer los dato
 git clone [url] -- tiene que estar publico para descargarse 
 
-
+*****Unir dos ramas de desarollo
+git checkout master -- estar en donde se van a traer los demas datos y unir con el master
+git merge
 
 
