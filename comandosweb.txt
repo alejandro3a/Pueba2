@@ -66,5 +66,11 @@ git clone [url] -- tiene que estar publico para descargarse
 *****Unir dos ramas de desarollo
 git checkout master -- estar en donde se van a traer los demas datos y unir con el master
 git merge
+*****Pull Request --sirve para pedir que todos esten de aceurdo para hacer un cambio al proyecto esto funciona ya en eldesarrolo profesional 
+git pull prueba2 master
+git brach fix-typo -- se crea una rama 
+git checkout fix-typo -- me desplazo a la rama creada
+
+
 
 
